@@ -1,0 +1,37 @@
+From 2de378aa9a2986fa3093a0e77f62f56add896f7e Mon Sep 17 00:00:00 2001
+From: Jean-Hugues Deschenes <jean-hugues.deschenes@ossiaco.com>
+Date: Fri, 1 Mar 2019 16:38:23 -0500
+Subject: [PATCH 48/48] elv_register_queue gets exported for dm-rq
+
+---
+ block/elevator.c         | 1 +
+ include/linux/elevator.h | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/block/elevator.c b/block/elevator.c
+index 4258cb9..0d68fef 100644
+--- a/block/elevator.c
++++ b/block/elevator.c
+@@ -871,6 +871,7 @@ int elv_register_queue(struct request_queue *q)
+ 	}
+ 	return error;
+ }
++EXPORT_SYMBOL(elv_register_queue);
+ 
+ void elv_unregister_queue(struct request_queue *q)
+ {
+diff --git a/include/linux/elevator.h b/include/linux/elevator.h
+index b974133..351b26b 100644
+--- a/include/linux/elevator.h
++++ b/include/linux/elevator.h
+@@ -197,6 +197,7 @@ extern bool elv_attempt_insert_merge(struct request_queue *, struct request *);
+ extern void elv_requeue_request(struct request_queue *, struct request *);
+ extern struct request *elv_former_request(struct request_queue *, struct request *);
+ extern struct request *elv_latter_request(struct request_queue *, struct request *);
++extern int elv_register_queue(struct request_queue *q);
+ extern int elv_may_queue(struct request_queue *, unsigned int);
+ extern void elv_completed_request(struct request_queue *, struct request *);
+ extern int elv_set_request(struct request_queue *q, struct request *rq,
+-- 
+2.7.4
+

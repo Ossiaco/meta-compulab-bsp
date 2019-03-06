@@ -1,0 +1,26 @@
+From 16a6541a62e9df15164aa87b63e468c7e53ea26b Mon Sep 17 00:00:00 2001
+From: Ilya Ledvich <ilya@compulab.co.il>
+Date: Sun, 12 Nov 2017 17:18:17 +0200
+Subject: [PATCH 01/48] ARM: dts: imx7d: cl-som-imx7: fix uart1 parent clock
+
+Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
+---
+ arch/arm/boot/dts/imx7d-cl-som-imx7.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/imx7d-cl-som-imx7.dts b/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
+index 3cc1fb9..086ed43 100644
+--- a/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
++++ b/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
+@@ -188,7 +188,7 @@
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&pinctrl_uart1>;
+ 	assigned-clocks = <&clks IMX7D_UART1_ROOT_SRC>;
+-	assigned-clock-parents = <&clks IMX7D_PLL_SYS_MAIN_240M_CLK>;
++	assigned-clock-parents = <&clks IMX7D_OSC_24M_CLK>;
+ 	status = "okay";
+ };
+ 
+-- 
+2.7.4
+

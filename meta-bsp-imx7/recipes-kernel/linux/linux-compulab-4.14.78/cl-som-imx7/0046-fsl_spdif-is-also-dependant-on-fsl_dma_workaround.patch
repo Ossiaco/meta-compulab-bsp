@@ -1,0 +1,25 @@
+From 33642b664d8bf2085e057f193b7b85dd60179cf7 Mon Sep 17 00:00:00 2001
+From: Jean-Hugues Deschenes <jean-hugues.deschenes@ossiaco.com>
+Date: Fri, 1 Mar 2019 15:50:26 -0500
+Subject: [PATCH 46/48] fsl_spdif is also dependant on fsl_dma_workaround
+
+---
+ sound/soc/fsl/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/sound/soc/fsl/Makefile b/sound/soc/fsl/Makefile
+index 0b23c8e..f7c54c0 100644
+--- a/sound/soc/fsl/Makefile
++++ b/sound/soc/fsl/Makefile
+@@ -22,7 +22,7 @@ snd-soc-fsl-dsp-objs := fsl_dsp.o fsl_dsp_proxy.o fsl_dsp_pool.o \
+ snd-soc-fsl-sai-objs := fsl_sai.o
+ snd-soc-fsl-ssi-y := fsl_ssi.o
+ snd-soc-fsl-ssi-$(CONFIG_DEBUG_FS) += fsl_ssi_dbg.o
+-snd-soc-fsl-spdif-objs := fsl_spdif.o
++snd-soc-fsl-spdif-objs := fsl_spdif.o fsl_dma_workaround.o
+ snd-soc-fsl-esai-objs := fsl_esai.o fsl_dma_workaround.o
+ snd-soc-fsl-utils-objs := fsl_utils.o
+ snd-soc-fsl-dma-objs := fsl_dma.o
+-- 
+2.7.4
+

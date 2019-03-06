@@ -1,7 +1,7 @@
 From b663c8d30a33d725718ee66c39a09431ebd5685b Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 12 Feb 2018 14:53:18 +0200
-Subject: [PATCH 33/51] ARM: imx7d: release kernel v4.9.11-cl-som-imx7-5.0
+Subject: [PATCH 33/48] ARM: imx7d: release kernel v4.9.11-cl-som-imx7-5.0
 
 Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
 ---

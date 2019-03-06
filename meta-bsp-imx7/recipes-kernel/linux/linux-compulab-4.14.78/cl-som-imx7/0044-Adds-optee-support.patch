@@ -1,0 +1,25 @@
+From 7e7204bb37bb54726eb04d4d573f160dcce5f1b9 Mon Sep 17 00:00:00 2001
+From: Jean-Hugues Deschenes <jean-hugues.deschenes@ossiaco.com>
+Date: Fri, 1 Mar 2019 15:33:08 -0500
+Subject: [PATCH 44/48] Adds optee support
+
+---
+ arch/arm/configs/compulab_imx7_defconfig | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/arch/arm/configs/compulab_imx7_defconfig b/arch/arm/configs/compulab_imx7_defconfig
+index 33c609a..2cb9a4a 100644
+--- a/arch/arm/configs/compulab_imx7_defconfig
++++ b/arch/arm/configs/compulab_imx7_defconfig
+@@ -491,6 +491,8 @@ CONFIG_STAGING_MEDIA=y
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_PWM=y
+ CONFIG_PWM_IMX=y
++CONFIG_TEE=y
++CONFIG_OPTEE=y
+ CONFIG_EXT2_FS=y
+ CONFIG_EXT2_FS_XATTR=y
+ CONFIG_EXT2_FS_POSIX_ACL=y
+-- 
+2.7.4
+

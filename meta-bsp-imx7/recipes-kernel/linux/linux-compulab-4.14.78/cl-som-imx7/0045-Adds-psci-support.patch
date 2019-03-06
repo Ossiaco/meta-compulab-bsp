@@ -1,0 +1,24 @@
+From 9979a5a2d2f7f359fa014de76318d46b40c1ef36 Mon Sep 17 00:00:00 2001
+From: Jean-Hugues Deschenes <jean-hugues.deschenes@ossiaco.com>
+Date: Fri, 1 Mar 2019 15:33:43 -0500
+Subject: [PATCH 45/48] Adds psci support
+
+---
+ arch/arm/configs/compulab_imx7_defconfig | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/configs/compulab_imx7_defconfig b/arch/arm/configs/compulab_imx7_defconfig
+index 2cb9a4a..2a4813c 100644
+--- a/arch/arm/configs/compulab_imx7_defconfig
++++ b/arch/arm/configs/compulab_imx7_defconfig
+@@ -36,6 +36,7 @@ CONFIG_PCI_IMX6=y
+ CONFIG_PCI_LAYERSCAPE=y
+ CONFIG_SMP=y
+ CONFIG_VMSPLIT_2G=y
++CONFIG_ARM_PSCI=y
+ CONFIG_PREEMPT=y
+ CONFIG_AEABI=y
+ CONFIG_HIGHMEM=y
+-- 
+2.7.4
+

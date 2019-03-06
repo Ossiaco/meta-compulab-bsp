@@ -1,0 +1,72 @@
+From cd92ae511359a10c9f102e6d6c28ff362c24b5ac Mon Sep 17 00:00:00 2001
+From: Jean-Hugues Deschenes <jean-hugues.deschenes@ossiaco.com>
+Date: Fri, 1 Mar 2019 16:10:22 -0500
+Subject: [PATCH 47/48] MX7D_PAD_GPIO1_* renamed to MX7D_PAD_LPSR_GPIO1_* in
+ device tree
+
+---
+ arch/arm/boot/dts/imx7d-cl-som-imx7.dts | 12 ++++++------
+ arch/arm/boot/dts/imx7d-sbc-imx7.dts    |  2 +-
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/arch/arm/boot/dts/imx7d-cl-som-imx7.dts b/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
+index 825890a..92e6e5b 100644
+--- a/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
++++ b/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
+@@ -636,7 +636,7 @@
+ 
+ 	pinctrl_wdog: wdoggrp {
+ 		fsl,pins = <
+-			MX7D_PAD_GPIO1_IO00__WDOD1_WDOG_B		0x74
++			MX7D_PAD_LPSR_GPIO1_IO00__WDOG1_WDOG_B		0x74
+ 		>;
+ 	};
+ };
+@@ -647,20 +647,20 @@
+ 
+ 	pinctrl_hog_lpsr: hoggrp_lpsr {
+ 		fsl,pins = <
+-			MX7D_PAD_GPIO1_IO04__GPIO1_IO4			0x34 /* FEC1 Phy nReset */
++			MX7D_PAD_LPSR_GPIO1_IO04__GPIO1_IO4			0x34 /* FEC1 Phy nReset */
+ 		>;
+ 	};
+ 
+ 	pinctrl_i2c2: i2c2grp {
+ 		fsl,pins = <
+-			MX7D_PAD_GPIO1_IO07__I2C2_SDA			0x4000000f
+-			MX7D_PAD_GPIO1_IO06__I2C2_SCL			0x4000000f
++			MX7D_PAD_LPSR_GPIO1_IO07__I2C2_SDA			0x4000000f
++			MX7D_PAD_LPSR_GPIO1_IO06__I2C2_SCL			0x4000000f
+ 		>;
+ 	};
+ 
+ 	pinctrl_sai1_lpsr: sai1grp_lpsr {
+ 		fsl,pins = <
+-			MX7D_PAD_GPIO1_IO01__SAI1_MCLK			0x14
++			MX7D_PAD_LPSR_GPIO1_IO01__SAI1_MCLK			0x14
+ 		>;
+ 	};
+ 
+@@ -669,4 +669,4 @@
+ 			MX7D_PAD_LPSR_GPIO1_IO05__GPIO1_IO5	0x14 /* OTG PWREN */
+ 		>;
+ 	};
+-};
+\ No newline at end of file
++};
+diff --git a/arch/arm/boot/dts/imx7d-sbc-imx7.dts b/arch/arm/boot/dts/imx7d-sbc-imx7.dts
+index f0b5a0d8..f46b25c 100644
+--- a/arch/arm/boot/dts/imx7d-sbc-imx7.dts
++++ b/arch/arm/boot/dts/imx7d-sbc-imx7.dts
+@@ -234,7 +234,7 @@
+ &iomuxc_lpsr {
+ 	pinctrl_pwm2: pwm2grp {
+ 		fsl,pins = <
+-			MX7D_PAD_GPIO1_IO02__PWM2_OUT		0x110b0
++			MX7D_PAD_LPSR_GPIO1_IO02__PWM2_OUT		0x110b0
+ 		>;
+ 	};
+ };
+-- 
+2.7.4
+
