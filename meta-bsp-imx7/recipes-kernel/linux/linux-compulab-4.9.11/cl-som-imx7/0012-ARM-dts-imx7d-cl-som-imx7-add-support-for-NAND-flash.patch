@@ -1,7 +1,7 @@
-From 007df12b91820fb2b67830ddee21c35891652234 Mon Sep 17 00:00:00 2001
+From 754177be7d514269cce327b6acc5b9354c0ac70f Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 11 Feb 2016 13:02:36 +0200
-Subject: [PATCH 12/52] ARM: dts: imx7d: cl-som-imx7: add support for NAND
+Subject: [PATCH 12/53] ARM: dts: imx7d: cl-som-imx7: add support for NAND
  flash
 
 Add support for NAND flash on GPMI interface.
@@ -88,5 +88,5 @@ index 0f2ce27..0b8bdbc 100644
  		fsl,pins = <
  			MX7D_PAD_GPIO1_IO14__GPIO1_IO14			0x34 /* PENDOWN */
 -- 
-1.9.1
+2.7.4
 

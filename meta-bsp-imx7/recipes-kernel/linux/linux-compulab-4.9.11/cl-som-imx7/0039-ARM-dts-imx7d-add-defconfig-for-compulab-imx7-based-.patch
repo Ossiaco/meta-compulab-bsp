@@ -1,7 +1,7 @@
-From 3187bca3694bd8f5339285fa84c49f5f470af757 Mon Sep 17 00:00:00 2001
+From 1c45fb145649a327c2a38d59e325595ef45b5e9b Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 12 Feb 2018 14:34:41 +0200
-Subject: [PATCH 39/52] ARM: dts: imx7d: add defconfig for compulab imx7 based
+Subject: [PATCH 39/53] ARM: dts: imx7d: add defconfig for compulab imx7 based
  devices
 
 Add defconfig to be used for Compulab devices based on NXP i.MX7 SoC:
@@ -560,5 +560,5 @@ index 0000000..4a78367
 +CONFIG_FONT_8x8=y
 +CONFIG_FONT_8x16=y
 -- 
-1.9.1
+2.7.4
 

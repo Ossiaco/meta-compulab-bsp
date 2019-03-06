@@ -1,7 +1,7 @@
-From 7f92d3ed839c35c8d3a0c68689a34b369f1a4b34 Mon Sep 17 00:00:00 2001
+From 0f2d2e2247a893b4c59e5a38e0fcc5e8e3f30423 Mon Sep 17 00:00:00 2001
 From: Valentin Raevsky <valentin@compulab.co.il>
 Date: Thu, 17 Dec 2015 10:56:48 +0200
-Subject: [PATCH 25/52] sil164: add dvi transmitter simple driver.
+Subject: [PATCH 25/53] sil164: add dvi transmitter simple driver.
 
 Add dvi transmitter simple driver.
 cl-sb-som-imx6ul makes use of a sil164 dvi transmitter.
@@ -66,7 +66,7 @@ index 0000000..6836f96
 +obj-$(CONFIG_SIL164_SIMPLE) += sil164_simple.o
 diff --git a/drivers/video/si/sil164_simple_drv.c b/drivers/video/si/sil164_simple_drv.c
 new file mode 100644
-index 0000000..6955111
+index 0000000..69551114
 --- /dev/null
 +++ b/drivers/video/si/sil164_simple_drv.c
 @@ -0,0 +1,241 @@
@@ -312,5 +312,5 @@ index 0000000..6955111
 +MODULE_DESCRIPTION("Silicon Image sil164 TMDS transmitter simple driver");
 +MODULE_LICENSE("GPL and additional rights");
 -- 
-1.9.1
+2.7.4
 

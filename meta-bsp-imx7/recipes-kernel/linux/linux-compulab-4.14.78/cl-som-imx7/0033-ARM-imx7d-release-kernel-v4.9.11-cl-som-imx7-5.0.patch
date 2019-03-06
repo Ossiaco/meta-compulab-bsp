@@ -1,7 +1,7 @@
-From 4504c5a8cd9f4dadfdf63672580b964294118da4 Mon Sep 17 00:00:00 2001
+From b663c8d30a33d725718ee66c39a09431ebd5685b Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 12 Feb 2018 14:53:18 +0200
-Subject: [PATCH 41/53] ARM: imx7d: release kernel v4.9.11-cl-som-imx7-5.0
+Subject: [PATCH 33/51] ARM: imx7d: release kernel v4.9.11-cl-som-imx7-5.0
 
 Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
 ---
@@ -9,16 +9,16 @@ Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Makefile b/Makefile
-index 18b0c5a..92bdf54 100644
+index 89574ee..1d16793 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -1,7 +1,7 @@
+@@ -2,7 +2,7 @@
  VERSION = 4
- PATCHLEVEL = 9
- SUBLEVEL = 11
+ PATCHLEVEL = 14
+ SUBLEVEL = 78
 -EXTRAVERSION =
-+EXTRAVERSION = -cl-som-imx7-5.0
- NAME = Roaring Lionus
++EXTRAVERSION = -cl-som-imx7-5.2
+ NAME = Petit Gorille
  
  # *DOCUMENTATION*
 -- 

@@ -1,7 +1,7 @@
-From 91d87924ff731f027f67c6897619c06295dcf3c1 Mon Sep 17 00:00:00 2001
+From 6df7a8941c92c5a69cf351d6182abbdc9fd6e004 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 14 Jan 2016 13:35:58 +0200
-Subject: [PATCH 06/52] ARM: dts: imx7d: cl-som-imx7: add support for gpio led
+Subject: [PATCH 06/53] ARM: dts: imx7d: cl-som-imx7: add support for gpio led
 
 Add support for onboard LED driven by GPIO6_14 in heartbeat mode.
 
@@ -48,5 +48,5 @@ index 142b401..d21f8d7 100644
  		fsl,pins = <
  			MX7D_PAD_SD2_CD_B__ENET1_MDIO			0x30
 -- 
-1.9.1
+2.7.4
 

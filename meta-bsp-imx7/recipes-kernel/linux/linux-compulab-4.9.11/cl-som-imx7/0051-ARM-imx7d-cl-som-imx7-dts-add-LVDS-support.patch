@@ -1,7 +1,7 @@
-From 7b616f6bcb9266ac10b3cfbc093e2e475ef38075 Mon Sep 17 00:00:00 2001
+From cecee90833998c7e25acdae4ff8e0dfdab8f4bf0 Mon Sep 17 00:00:00 2001
 From: Uri Mashiach <uri.mashiach@compulab.co.il>
 Date: Mon, 3 Sep 2018 19:11:45 +0300
-Subject: [PATCH 51/52] ARM: imx7d: cl-som-imx7: dts: add LVDS support
+Subject: [PATCH 51/53] ARM: imx7d: cl-som-imx7: dts: add LVDS support
 
 MIPI DSI to LVDS bridge configuration for LVDS panel
 Ampire 7"-AM-1280800P
@@ -99,5 +99,5 @@ index 0000000..47d3e72
 +	};
 +};
 -- 
-1.9.1
+2.7.4
 

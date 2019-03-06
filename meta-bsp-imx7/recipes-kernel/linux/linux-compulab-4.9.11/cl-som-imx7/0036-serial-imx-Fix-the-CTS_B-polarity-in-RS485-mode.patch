@@ -1,7 +1,7 @@
-From 86d22401a72818ce3dfd9f2083673ff483adaf60 Mon Sep 17 00:00:00 2001
+From 9fa33addc464d0fecb4108736804f84436a0ffdf Mon Sep 17 00:00:00 2001
 From: Fabio Estevam <fabio.estevam@nxp.com>
 Date: Mon, 30 Jan 2017 09:12:12 -0200
-Subject: [PATCH 36/52] serial: imx: Fix the CTS_B polarity in RS485 mode
+Subject: [PATCH 36/53] serial: imx: Fix the CTS_B polarity in RS485 mode
 
 When userspace passes the SER_RS485_RTS_ON_SEND flag it means that the
 CTS_B pin should go to logic level high before the transmission begins.
@@ -45,5 +45,5 @@ index e13bab5..2fd7111 100644
  	mctrl_gpio_set(sport->gpios, sport->port.mctrl & ~TIOCM_RTS);
  }
 -- 
-1.9.1
+2.7.4
 

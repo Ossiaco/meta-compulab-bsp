@@ -1,0 +1,39 @@
+From 0369f1fefd5f3e12a7c9c4014a74259cfc5d9a55 Mon Sep 17 00:00:00 2001
+From: Jean-Hugues Deschenes <jean-hugues.deschenes@ossiaco.com>
+Date: Mon, 4 Mar 2019 17:08:16 -0500
+Subject: [PATCH 53/53] Enable pxp engine
+
+---
+ arch/arm/boot/dts/imx7d-cl-som-imx7.dts | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/arch/arm/boot/dts/imx7d-cl-som-imx7.dts b/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
+index ad189de..b42fdca 100644
+--- a/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
++++ b/arch/arm/boot/dts/imx7d-cl-som-imx7.dts
+@@ -107,6 +107,11 @@
+ 		};
+ 	};
+ 
++	pxp_v4l2_out {
++		compatible = "fsl,imx7d-pxp-v4l2", "fsl,imx6sx-pxp-v4l2", "fsl,imx6sl-pxp-v4l2";
++		status = "okay";
++	};
++
+         sound {
+ 		compatible = "simple-audio-card";
+ 		simple-audio-card,name = "cl-som-imx7";
+@@ -224,6 +229,10 @@
+ 	};
+ };
+ 
++&epxp {
++	status = "okay";
++};
++
+ &fec1 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&pinctrl_enet1>;
+-- 
+2.7.4
+

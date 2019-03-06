@@ -1,7 +1,7 @@
-From 6f3b221c5e0b3b4a2791febe2326ee3e4adb917d Mon Sep 17 00:00:00 2001
+From 5e69760b065172c37279c380e3f04b6c27cac9d1 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Sun, 14 Jan 2018 13:36:51 +0200
-Subject: [PATCH 29/52] ARM: dts: imx7d: sbc-imx7: enable PCIe
+Subject: [PATCH 29/53] ARM: dts: imx7d: sbc-imx7: enable PCIe
 
 Enable PCIe peripheral. Use the internal clock input as
 a Reference clock for the PCIe PHY.
@@ -37,5 +37,5 @@ index d6a8055..f0b5a0d8 100644
  	pinctrl-names = "default";
  	pinctrl-0 = <&pinctrl_pwm2>;
 -- 
-1.9.1
+2.7.4
 

@@ -1,7 +1,7 @@
-From a2f310f7f4e30b684e9c911e643f30e45636f9eb Mon Sep 17 00:00:00 2001
+From dd40b4e44f15916e013a58e4464b4840ce11e7ef Mon Sep 17 00:00:00 2001
 From: Uri Mashiach <uri.mashiach@compulab.co.il>
 Date: Mon, 3 Sep 2018 18:49:12 +0300
-Subject: [PATCH 50/52] ARM: imx7d: cl-som-imx7: enable LVDS support
+Subject: [PATCH 50/53] ARM: imx7d: cl-som-imx7: enable LVDS support
 
 The CL-SOM-iMX7 include a MIPI DSI to LVDS bridge.
 Enable the MIPI DSI and the bridge drivers.
@@ -25,5 +25,5 @@ index 4db63f2..33c609a 100644
  CONFIG_LCD_L4F00242T03=y
  CONFIG_LCD_PLATFORM=y
 -- 
-1.9.1
+2.7.4
 

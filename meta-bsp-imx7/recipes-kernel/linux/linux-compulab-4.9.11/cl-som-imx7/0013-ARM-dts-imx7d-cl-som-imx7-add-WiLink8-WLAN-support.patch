@@ -1,7 +1,7 @@
-From 3d91e9725d4f0c0cccbd2349be5e793dee30f39d Mon Sep 17 00:00:00 2001
+From 9ab1efff0ed7ccf074aae42c4f0fcc9ee66929fb Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Fri, 8 Apr 2016 09:16:19 +0300
-Subject: [PATCH 13/52] ARM: dts: imx7d: cl-som-imx7: add WiLink8 WLAN support
+Subject: [PATCH 13/53] ARM: dts: imx7d: cl-som-imx7: add WiLink8 WLAN support
 
 Add support for TI's WiLink8 WLAN module on SD2 bus.
 
@@ -99,5 +99,5 @@ index 0b8bdbc..5a3ec34 100644
  		fsl,pins = <
  			MX7D_PAD_SD3_CMD__SD3_CMD			0x59
 -- 
-1.9.1
+2.7.4
 

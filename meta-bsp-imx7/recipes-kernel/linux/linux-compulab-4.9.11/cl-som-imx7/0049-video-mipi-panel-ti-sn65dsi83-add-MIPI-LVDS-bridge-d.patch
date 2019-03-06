@@ -1,7 +1,7 @@
-From d5bccf6211ab27cacc97cdf9b62637442db30fe3 Mon Sep 17 00:00:00 2001
+From 5a5800fef061459b46b3b379ab448d353357a65f Mon Sep 17 00:00:00 2001
 From: Valentin Raevsky <valentin@compulab.co.il>
 Date: Mon, 3 Sep 2018 18:06:25 +0300
-Subject: [PATCH 49/52] video: mipi-panel: ti,sn65dsi83: add MIPI LVDS bridge
+Subject: [PATCH 49/53] video: mipi-panel: ti,sn65dsi83: add MIPI LVDS bridge
  driver
 
 Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
@@ -647,5 +647,5 @@ index 0000000..3d0531c
 +MODULE_DESCRIPTION("SN65DSI83 DSI-to-LVDS bridge IC driver");
 +MODULE_LICENSE("GPL");
 -- 
-1.9.1
+2.7.4
 

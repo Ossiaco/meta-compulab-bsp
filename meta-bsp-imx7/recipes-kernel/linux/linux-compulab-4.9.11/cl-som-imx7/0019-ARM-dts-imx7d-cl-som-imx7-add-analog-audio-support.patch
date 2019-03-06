@@ -1,7 +1,7 @@
-From 9e1926812536cbaeb4ba26b7667e86d305748346 Mon Sep 17 00:00:00 2001
+From 424de3636ae22bec610936734dd66399926febf8 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 9 Jun 2016 15:35:07 +0300
-Subject: [PATCH 19/52] ARM: dts: imx7d: cl-som-imx7: add analog audio support
+Subject: [PATCH 19/53] ARM: dts: imx7d: cl-som-imx7: add analog audio support
 
 Add analog audio support by means of the simple-audio-card.
 This instance provides a simple glue interface between cpu:sai and codec:wm8731.
@@ -131,5 +131,5 @@ index 3ddee8d..3f41279 100644
  		fsl,pins = <
  			MX7D_PAD_GPIO1_IO05__GPIO1_IO5			0x14 /* OTG PWREN */
 -- 
-1.9.1
+2.7.4
 

@@ -1,7 +1,7 @@
-From 49cf64db589dede341d83d83d4e92e9583779c77 Mon Sep 17 00:00:00 2001
+From ac45bbfbc4fc05a8d7cdaca683be3ae4beb87e3c Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 12 Feb 2018 12:08:03 +0200
-Subject: [PATCH 14/52] Bluetooth: sync btwilink and st_ti drivers with v4.1.15
+Subject: [PATCH 14/53] Bluetooth: sync btwilink and st_ti drivers with v4.1.15
 
 Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
 ---
@@ -156,7 +156,7 @@ index b6bb58c..e484a92 100644
  }
  
  static int bt_ti_remove(struct platform_device *pdev)
-@@ -338,6 +358,7 @@ static int bt_ti_remove(struct platform_device *pdev)
+@@ -338,6 +358,7 @@ static struct platform_driver btwilink_driver = {
  	.remove = bt_ti_remove,
  	.driver = {
  		.name = "btwilink",
@@ -264,7 +264,7 @@ index bf0d770..7c3512e 100644
  
  #define MAX_ST_DEVICES	3	/* Imagine 1 on each UART for now */
  static struct platform_device *st_kim_devices[MAX_ST_DEVICES];
-@@ -43,6 +46,9 @@
+@@ -43,6 +46,9 @@ static struct platform_device *st_kim_devices[MAX_ST_DEVICES];
  /**********************************************************************/
  /* internal functions */
  
@@ -328,7 +328,7 @@ index bf0d770..7c3512e 100644
  	return count;
  }
  #endif	/* if DEBUG */
-@@ -720,13 +738,52 @@ static int kim_list_open(struct inode *i, struct file *f)
+@@ -720,13 +738,52 @@ static const struct file_operations list_debugfs_fops = {
   * board-*.c file
   */
  
@@ -440,7 +440,7 @@ index bf0d770..7c3512e 100644
  
  	if (pdata->resume)
  		return pdata->resume(pdev);
-@@ -859,6 +940,8 @@ static int kim_resume(struct platform_device *pdev)
+@@ -859,6 +940,8 @@ static struct platform_driver kim_platform_driver = {
  	.resume = kim_resume,
  	.driver = {
  		.name = "kim",
@@ -1061,5 +1061,5 @@ index f229302..c78dcfe 100644
  
  /*
 -- 
-1.9.1
+2.7.4
 

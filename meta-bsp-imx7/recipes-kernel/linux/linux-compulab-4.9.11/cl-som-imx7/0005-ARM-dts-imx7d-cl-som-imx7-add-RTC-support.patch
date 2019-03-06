@@ -1,7 +1,7 @@
-From 58435721b785f15da0c0d94cdaa8e32d3f48fdf3 Mon Sep 17 00:00:00 2001
+From 540c94fbae992130fdd8fc3d55179ea377b8f85b Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Mon, 13 Nov 2017 12:49:04 +0200
-Subject: [PATCH 05/52] ARM: dts: imx7d: cl-som-imx7: add RTC support
+Subject: [PATCH 05/53] ARM: dts: imx7d: cl-som-imx7: add RTC support
 
 Add support for EM3027 Real Time Clock over I2C2 bus.
 
@@ -27,5 +27,5 @@ index 42eea19..142b401 100644
  
  &uart1 {
 -- 
-1.9.1
+2.7.4
 

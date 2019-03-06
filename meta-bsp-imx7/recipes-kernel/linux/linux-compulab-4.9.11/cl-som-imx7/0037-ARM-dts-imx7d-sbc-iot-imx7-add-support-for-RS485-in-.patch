@@ -1,7 +1,7 @@
-From 547792379fa17db9acbd919776bef8cb52854fae Mon Sep 17 00:00:00 2001
+From ded605c952eb9836055810cd6c239375290db534 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 8 Feb 2018 15:36:46 +0200
-Subject: [PATCH 37/52] ARM: dts: imx7d: sbc-iot-imx7: add support for RS485 in
+Subject: [PATCH 37/53] ARM: dts: imx7d: sbc-iot-imx7: add support for RS485 in
  half duplex mode
 
 Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
@@ -66,5 +66,5 @@ index 0000000..cbb5a6b
 +	status = "okay";
 +};
 -- 
-1.9.1
+2.7.4
 

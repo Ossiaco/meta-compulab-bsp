@@ -1,7 +1,7 @@
-From ae1fa5e8ccf53aaac209deb760318434d4022027 Mon Sep 17 00:00:00 2001
+From 7616f12034f2d1d3b0eb5ef14ed99d73590a0b09 Mon Sep 17 00:00:00 2001
 From: Uri Mashiach <uri.mashiach@compulab.co.il>
 Date: Tue, 7 Aug 2018 09:18:10 +0300
-Subject: [PATCH 45/52] regulator: add userspace-consumer-wrapper driver
+Subject: [PATCH 45/53] regulator: add userspace-consumer-wrapper driver
 
 Add the ability to control the userspace-consumer driver from device
 tree.
@@ -145,5 +145,5 @@ index 0000000..d1adb67
 +MODULE_DESCRIPTION("Userspace consumer device tree wrapper");
 +MODULE_LICENSE("GPL v2");
 -- 
-1.9.1
+2.7.4
 

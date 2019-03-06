@@ -1,7 +1,7 @@
-From ed3b9cfc5da901934556ad48a3db87b527652f98 Mon Sep 17 00:00:00 2001
+From 0d264dae90c5393c85c10ed9f7cb95b4d2464b85 Mon Sep 17 00:00:00 2001
 From: Fabio Estevam <fabio.estevam@nxp.com>
 Date: Sat, 7 Jan 2017 19:29:13 -0200
-Subject: [PATCH 33/52] serial: imx: Allow passing 'rst-gpios' for rs485 mode
+Subject: [PATCH 33/53] serial: imx: Allow passing 'rst-gpios' for rs485 mode
 
 According to Documentation/devicetree/bindings/serial/serial.txt the
 generic 'rts-gpios' property can be used to specify the GPIO for RTS
@@ -57,5 +57,5 @@ index fe070db..1c224e5 100644
  }
  #else
 -- 
-1.9.1
+2.7.4
 

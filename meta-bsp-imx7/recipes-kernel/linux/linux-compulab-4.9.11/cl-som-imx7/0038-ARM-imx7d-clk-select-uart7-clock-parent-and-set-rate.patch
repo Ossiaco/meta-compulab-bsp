@@ -1,7 +1,7 @@
-From 56cbbdfff6c59ede79f528ad8805cd66e430541f Mon Sep 17 00:00:00 2001
+From 0f1844424c12f84ce9eee82884b356558ac25a8c Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Sun, 11 Feb 2018 14:39:37 +0200
-Subject: [PATCH 38/52] ARM: imx7d: clk: select uart7 clock parent and set rate
+Subject: [PATCH 38/53] ARM: imx7d: clk: select uart7 clock parent and set rate
 
 Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
 ---
@@ -22,5 +22,5 @@ index ccc2119..a96bd4b 100644
  	imx_register_uart_clocks(uart_clks);
  }
 -- 
-1.9.1
+2.7.4
 

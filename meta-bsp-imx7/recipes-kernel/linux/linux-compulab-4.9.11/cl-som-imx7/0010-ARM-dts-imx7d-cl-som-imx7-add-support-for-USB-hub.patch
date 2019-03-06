@@ -1,7 +1,7 @@
-From 0674c392fc3d3da5b3712f57e1a71e637df1962d Mon Sep 17 00:00:00 2001
+From f9bcc3ec39cf7e72362d1c0f94f90145a0de3edf Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Tue, 24 May 2016 16:53:34 +0300
-Subject: [PATCH 10/52] ARM: dts: imx7d: cl-som-imx7: add support for USB hub
+Subject: [PATCH 10/53] ARM: dts: imx7d: cl-som-imx7: add support for USB hub
 
 Add support for onboard USB hub over USB HSIC controller.
 
@@ -53,5 +53,5 @@ index 18f13aa..24d4622 100644
  	pinctrl-names = "default";
  	pinctrl-0 = <&pinctrl_usdhc3>;
 -- 
-1.9.1
+2.7.4
 

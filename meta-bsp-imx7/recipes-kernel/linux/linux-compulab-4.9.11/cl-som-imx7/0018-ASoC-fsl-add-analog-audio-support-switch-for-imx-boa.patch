@@ -1,7 +1,7 @@
-From bc4bc559c1e0ee9ccdf9c288788fbec4a8f28a48 Mon Sep 17 00:00:00 2001
+From 83d0bc9ea8392bc656c71f39841f7b738a03a329 Mon Sep 17 00:00:00 2001
 From: Valentin Raevsky <valentin@compulab.co.il>
 Date: Thu, 9 Jun 2016 14:12:32 +0300
-Subject: [PATCH 18/52] ASoC: fsl: add analog audio support switch for imx
+Subject: [PATCH 18/53] ASoC: fsl: add analog audio support switch for imx
  boards with wm8731
 
 Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
@@ -33,5 +33,5 @@ index 4b2ad1b..33ff84d 100644
  	tristate "SoC Audio support for i.MX boards with wm8962"
  	depends on OF && I2C && INPUT
 -- 
-1.9.1
+2.7.4
 

@@ -1,7 +1,7 @@
-From e404d129393e04ad6d42ac070763829599044f81 Mon Sep 17 00:00:00 2001
+From cb547ad444f3dd7b344036be7c3280bedc18ddc3 Mon Sep 17 00:00:00 2001
 From: Uri Mashiach <uri.mashiach@compulab.co.il>
 Date: Tue, 7 Aug 2018 10:33:09 +0300
-Subject: [PATCH 47/52] ARM: imx7d: cl-som-imx7: Bluetooth control with
+Subject: [PATCH 47/53] ARM: imx7d: cl-som-imx7: Bluetooth control with
  regulator
 
 Use the user space regulator to enable/disable the Bluetooth.
@@ -48,5 +48,5 @@ index eca9a5d..ad189de 100644
  
  &clks {
 -- 
-1.9.1
+2.7.4
 

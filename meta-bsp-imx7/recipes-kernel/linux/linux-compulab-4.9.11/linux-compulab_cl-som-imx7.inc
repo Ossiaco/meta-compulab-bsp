@@ -51,4 +51,5 @@ SRC_URI_append_cl-som-imx7 += "\
     file://0050-ARM-imx7d-cl-som-imx7-enable-LVDS-support.patch \
     file://0051-ARM-imx7d-cl-som-imx7-dts-add-LVDS-support.patch \
     file://0052-ARM-imx7d-release-kernel-v4.9.11-cl-som-imx7-5.1.patch \
+	file://0053-Enable-pxp-engine.patch \
 "

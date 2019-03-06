@@ -1,7 +1,7 @@
-From 3ab407c5c4664b2c2565f149d539fe345cdfcebd Mon Sep 17 00:00:00 2001
+From 069f118708ae9150d198553c402df3b522f373aa Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Thu, 30 Nov 2017 13:22:15 +0200
-Subject: [PATCH 04/52] ARM: dts: imx7d: cl-som-imx7: fix fec configuration
+Subject: [PATCH 04/53] ARM: dts: imx7d: cl-som-imx7: fix fec configuration
 
 Fix Pad Control Register values for MDC/MDIO pins.
 Add PHYs reset support.
@@ -68,5 +68,5 @@ index 6cb382c..42eea19 100644
  		fsl,pins = <
  			MX7D_PAD_GPIO1_IO07__I2C2_SDA			0x4000000f
 -- 
-1.9.1
+2.7.4
 

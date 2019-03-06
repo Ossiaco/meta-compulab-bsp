@@ -1,7 +1,7 @@
-From 25704e14d14a981f4fff00d30a3e1232bf18604b Mon Sep 17 00:00:00 2001
+From 384587a3d9e765e53e5b8fd5f9b43b551ea111df Mon Sep 17 00:00:00 2001
 From: Jyri Sarha <jsarha@ti.com>
 Date: Wed, 27 Aug 2014 23:27:05 +0000
-Subject: [PATCH 16/52] ASoC: simple-card: Add system-clock-direction DT
+Subject: [PATCH 16/53] ASoC: simple-card: Add system-clock-direction DT
  parameter to dai nodes
 
 Select dir parameters for set_sysclk calls in the card init phase.
@@ -70,5 +70,5 @@ index 1cb3930..22c469d 100644
  			dev_err(dai->dev, "simple-card: set_sysclk error\n");
  			return ret;
 -- 
-1.9.1
+2.7.4
 

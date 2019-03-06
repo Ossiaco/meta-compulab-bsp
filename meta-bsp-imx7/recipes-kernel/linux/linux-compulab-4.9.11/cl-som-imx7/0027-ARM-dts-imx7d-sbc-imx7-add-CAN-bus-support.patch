@@ -1,7 +1,7 @@
-From 525709d2462b89b1fbec8812fe422fa8ac944993 Mon Sep 17 00:00:00 2001
+From 851becbf283a49a6bb63f83c29ac32e83bfe18a7 Mon Sep 17 00:00:00 2001
 From: Ilya Ledvich <ilya@compulab.co.il>
 Date: Tue, 14 Jun 2016 11:43:03 +0300
-Subject: [PATCH 27/52] ARM: dts: imx7d: sbc-imx7: add CAN bus support
+Subject: [PATCH 27/53] ARM: dts: imx7d: sbc-imx7: add CAN bus support
 
 Enable CAN bus support over FLEXCAN1 and FLEXCAN2 interfaces.
 
@@ -55,5 +55,5 @@ index 471ede4..d6a8055 100644
  		fsl,pins = <
  			MX7D_PAD_GPIO1_IO11__I2C4_SDA		0x4000000f
 -- 
-1.9.1
+2.7.4
 
